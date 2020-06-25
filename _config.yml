@@ -1,17 +1,16 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        ""
-url:            "https://chesterhow.github.io"
+title:          Singular Korea
+description:    "Singular Korea Blog"
+url:            "https://singularkorea.github.io"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Singular Korea
+  url:          https://www.singular.net
+  email:        teamkorea@singular.net
 
 # Build settings
 markdown:       kramdown
