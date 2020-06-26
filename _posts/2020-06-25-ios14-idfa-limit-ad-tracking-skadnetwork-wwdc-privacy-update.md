@@ -58,3 +58,6 @@ iOS 14 버전부터는 유저가 사용하는 앱의 앱스토어 제품 페이�
 ![App privacy](https://www.singular.net/wp-content/uploads/2020/06/pasted-image-0-3-756x1024.png)
 
 이밖에도 공유드릴 정보가 많습니다. 다음 포스팅에서 더 자세한 내용을 확인해보세요!
+
+<hr>
+[Singular 홈페이지에서 원문 보기](https://www.singular.net/blog/ios14-idfa-limit-ad-tracking-skadnetwork-wwdc-privacy-update/)

@@ -5,6 +5,9 @@ author: "Singular Korea"
 permalink: /about/
 ---
 
+[Find more about Singular here](https://www.singular.net/)
+<hr>
+
 # Our values
 These values reflect who we are and help us make decisions about business, product, and culture. These are the ideals that keep us grounded.
 
@@ -20,4 +23,5 @@ We’re always challenging existing paradigms. We set new standards, uncover dee
 ## Unify exceptional people
 We believe in building deep connections - between teams, cultures and yes, even systems. Our team is a unique combination of high IQ, EQ and AQ. We care more about accomplishment than credit. These are the people we want to work with the rest of our lives.
 
-
+<hr>
+[Find more about Singular here](https://www.singular.net/)
