@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Singluar는 IDFA를 대체하는 SKAdNetwork를 마켓 최초로 지원합니다."
+title: "Singular는 IDFA를 대체하는 SKAdNetwork를 마켓 최초로 지원합니다."
 author: "Gadi Eliashiv"
 ---
 
