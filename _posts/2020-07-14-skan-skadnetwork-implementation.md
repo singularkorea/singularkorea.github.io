@@ -1,140 +1,48 @@
 ---
 layout: post
-title: "iOS 14와 IDFA의 지원 중단: 실제 질문에 대답합니다"
+title: "SKAN: SKAdNetwork 연동의 표준"
 author: "Eran Friedman"
 ---
-![cover](https://www.singular.net/wp-content/uploads/2020/07/IDFA-QA.png)
+![cover](https://www.singular.net/wp-content/uploads/2020/07/SKAN_SKAdNetwork_Implementation_Singular_Blog_Hero.png)
 
-> Apple의 새로운 개인 정보 보호 강화 정책이 여러분에게 어떤 영향을 미칠지 궁금하신가요?
-> 저희의 온디멘드 웨미나, [iOS 14 & IDFA 변화 사항: 인지해야 할 사항](https://www.singular.net/lp/idfa-webinar?utm_medium=internal&utm_source=blog&utm_campaign=2006IDFAWebinar_blogs&utm_adgroup=what-is-skadnetwork&utm_content=inline)에서 확인하세요.
+Singular가 [SKAdNetwork 지원](https://singularkorea.github.io/2020-06-28/skadnetwork-support)을 발표하고 [오픈 소스 코드](https://singularkorea.github.io/2020-07-06/skadnetwork-code)를 배포한 이후 업계의 많은 관심이 집중됐습니다. 또한 저희는 여러 광고주, 퍼블리셔, 매체 및 MMP와 함께 SKAdNetowork의 포텐셜에 대해 다각도로 논의해 왔습니다.
 
-iOS의 모바일 마케팅은 변화하고 있습니다. Apple이 올 9월 iOS 14를 런칭하면 광고주를 위한 ID는 옵트인으로 변경되고, 옵트인 대화 상자는 인터넷 상에서 트래킹이 가능할 것이라는 무서운 단어를 담게 되죠.
+저희를 포함한 업계 종사자들은 여러 가치 있는 정보를 얻을 수 있었던 IDFA가 중단된다는 사실을 받아들이고 또 다른 현실을 준비해야 합니다. IDFA가 없는 현실은 파편화된 데이터, 핑거프린팅, 디바이스 내의 솔루션, 그리고 SKAdNetwork라는 모습이죠.
 
-0%에서 20% 가량의 사람들만 실제로 IDFA 옵트인을 할 것이라 예상됩니다.
+SKAdNetwork는 장점도 있지만 제한적인 부분도 있습니다. Singular에서는 개인 정보 보호 가능한 대체 방법을 찾기 위해 많은 관계자와 함께  지속적으로 개발 활동에 참여해 왔습니다. 이러한 노력으로 모두의 성공에 이바지할 수 있다면 이보다 더 좋은 일이 없을 겁니다.
 
-이 예측 수치조차 너무 낙관적인지도 모릅니다.
+그러나 아직 답을 찾지 못한 질문과 혼선이 많습니다.
 
-이 엄청난 변화 속에서 모바일 마케터에게는 수많은 질문이 생겨났을 겁니다. 자연히 Apple의 어트리뷰션 프레임워크인 SKAdNetwork의 정보를 알고자 하는 높은 수요가 존재합니다. 또한 많은 마케터가 어트리뷰션과 포스트 인스톨 전환이 어떻게 일어나는지, MMP는 새로운 패러다임을 어떻게 지원할지 궁금하실 겁니다.
+SKAdNetwork는 좋든 싫든 현실로 다가올 것으로 보입니다. SKAdNetwork는 아직 기본만 갖춰져 있는 프레임워크로 기업에서 유용하게 사용되려면 굉장히 조심스럽게 실행되고 철저히 관리되어야 합니다.
 
-저희가 이러한 의문 해소를 도와드리겠습니다.
+이러한 이유로 Singular에서는 SKAN을 개발했습니다. 불확실 속에서도 끊임없이 답을 찾기 위한 시도를 하기 위해서죠.
 
-Singular는 [SKAdNetwork 지원을 발표한 첫번째 모바일 측정 파트너(MMP)](https://singularkorea.github.io/2020-06-28/skadnetwork-support)이며, 700명 이상의 마케터가 참석한 대규모 웨비나에서 9월 이후의 변화에 대해 최신 정보를 공유했습니다. 만약 해당 행사에 참석하지 못했다면, [여기에서 슬라이드와 동영상을 확인하세요](https://www.singular.net/lp/idfa-webinar?utm_medium=internal&utm_source=blog&utm_campaign=2006IDFAWebinar_blogs&utm_adgroup=skadnetwork-support&utm_content=inline).
+## SKAdNetwork를 위한 실용적인 모델, SKAN을 소개합니다
 
-또한 광고주, 광고 네트워크, 퍼블리셔 등 관련 종사자들이 본 변화에 대해 열린 토론을 할 수 있도록 Mobile Attribution Privacy (MAP) 연합이 모인 Slack 그룹도 있습니다. [Slack 그룹](https://join.slack.com/t/mapworkinggroup/shared_invite/zt-9vlvhtzn-bqUVQ1zn3o1UorDNIodvZg)에 참여해서 여러분의 의견을 공유하거나 질의 응답을 진행해보세요.
+SKAN을 발표할 수 있게 되어 정말 기쁩니다. SKAN는 SKAdNetwork의 연동 표준을 위한 제안입니다. SKAN은 모바일 생태계가SKAdNetwork의 어려움을 극복하고 올바르게 사용할 수 있는 방법에 대한 설명하고 있습니다. 추가로 생태계에서 더 가치 있고 널리 사용할 수 있는 방법에 대해서도 알아볼 수 있습니다.
 
-마지막으로, 저희가 웨비나에서 받은 IDFA, SKAdNetwork, MMP, Singular, 전환, 어트리뷰션에 관련한 여러 질문에 대한 답변을 아래에 정리해 보았습니다.
+저희는 SKAdNetwork의 문제점을 수많은 업계 종사자와 논의한 후에 이러한 내용을 구축할 수 있었습니다.
 
-## iOS 14 & IDFA: 웨비나에서의 질문 사항
+SKAN으로 저희는 다음와 같은 목표를 이루고자 합니다.
 
-**Q: 현재 IDFA 비중**
+* 모바일 광고 생태계의 파편화 및 파괴를 막기 위해 SKAdNetwork 레퍼런스 연동 계획 생성
+* SKAdNetwork가 (유저 동의를 얻는 경우의) IDFA 기반 어트리뷰션 및 핑거프린팅과 호환될 수 있도록 디자인
+* 파편화된 SKAdNetwork 포스트백을 통합할 수 있는 방법 제공
+* SKAdNetwork의 전환값(conversion value) 관리 및 연동 표준 정의
+* SKAdNetwork에 발생할 수 있는 fraud의 솔루션 제공 (전환값 조작, 반복적인 transaction ID 공격, 지역 값 조작 등)
+* 마케터와 매체가 ROAS 및 기타 KPI를 측정할 수 있는 방법 정의
+* 광고주에게 통합된 리포팅 제공에 필요한 인프라 정의
 
-Dzenis: "현재 IDFA를 사용하는 트래픽은 얼마나 되나요? 대부분이 핑거프린팅이 아닌가요?"
+[PDF를 다운받고 SKAN에 대해 자세히 알아보세요.](https://drive.google.com/file/d/1Yhri-jG7Jv4zD_Do8_eYBdET2o3uBZQ4/view?usp=sharing?utm_medium=web&utm_source=blog&utm_campaign=skan-practical-standard&utm_content=inline)
 
-**A**: 미국 iOS 유저 중 대략 70%가 광고 추적 차단(LAT, Limit Ad Tracking)을 활성화하지 않았고 IDFA로 측정과 타케팅이 가능합니다. Android는 5% 정도의 유저만이 유사한 설정(광고 개인 최적화: Ads Personalization)를 켰으므로 95% 이상의 Android가 측정 및 트래킹이 가능합니다.
+## 지금 동참하세요!
 
-보다 자세한 사항과 다양한 국가에 대한 정보는 다음 링크에서 확인하세요.
+SKAN 규격에 기여하실 분은 누구나 환영입니다. SKAN에서는 자유로운 제안과 논의, 개선 및 비판이 진행될 수 있도록 의도적으로 저희를 포함한 모든 해당 기여사의 이름이 제외됩니다.
 
-[개인 정보 진단(Privacy checkup: Limit Ad Tracking up 216% on iOS, but down 85% on Android)](https://www.singular.net/blog/limit-ad-tracking-privacy-checkup-in-2020/)
+한 집단에서만 미래를 그릴 수는 없습니다. 저희는 동종업계 종사자로서 함께 마케팅의 미래를 그려야 한다고 생각합니다. 그리고 9월에 예고된 iOS 14에 맞춰 발빠르게 움직여야 합니다.
 
-**Q: iOS 14 대비 광고주 계획**
+관련하여 다양한 업계의 리더들과 이야기를 나누면서 더 상세한 정보를 논의하고 싶은 분은 [Mobile Attribution Privacy (MAP) Slack 그룹](https://join.slack.com/t/mapworkinggroup/shared_invite/zt-9vlvhtzn-bqUVQ1zn3o1UorDNIodvZg)으로 참여해 주시고 많은 관심 부탁드립니다.
 
-Kamara: "유저에게 개인 정보 권한 수락을 요청할 예정인 고객사(광고주)가 있나요? 트래킹 요청에 대해 어떤 입장을 보이나요?"
-
-**A**: 많은 고객사가 유스 케이스에 가장 맞는 옵션을 아직도 강구하는 중입니다. 어떤 고객사는 동의 절차를 좀 더 정교화하는 방법을 모색하고 있고, 어떤 고객사는 추가 비용을 회피하고자 하죠. 어떤 경우라도 충분한 대책은 아닐 수 있습니다. 저희는 고객사를 지원하고 다양한 상황과 시나리오를 수용할 도구를 제공하기 위해 준비하고 있습니다.
-
-더 많은 사항은 아래 링크에서 확인하세요.
-
-[IDFA iOS 14 FAQ: 무엇이 진짜이고 가짜일까요?](https://singularkorea.github.io/2020-06-29/idfa-faq)
-
-**Q: 프로그래매틱에의 영향**
-
-Stan: "프로그래매틱 모바일 광고와 측정/어트리뷰션에는 어떤 영향이 있나요? IDFA가 실질적으로 없어질까요?"
-
-**A**: IDFA의 사용성은 최소화될 겁니다. 많은 업계 전문가들이 0-20% 사이로 예상하고 있죠. 즉, DSP는 당장 해당 변화에 적응해야 할 겁니다. 일반적으로 그들은 IDFA로 식별된 특정 디바이스 정보에 의존하여 입찰해 왔습니다. 상황에 맞는 모델로 전환할 수는 있지만 이것이 광고 플레이스먼트 가치를 추정하는데 적합한지 검증해야겠죠.
-
-동시에 캐쥬얼 게이밍 퍼블리셔와 같은 큰 퍼블리셔들은 동의를 얻어내려 보다 공격적인 방법을 동원할 가능성이 있습니다. 많은 수가 성공적으로 이런 방법을 실행한다면 옵트인 유저에게 인센티브를 제공하는 측에서 더 많은 광고 수익을 얻는 하이브리드 방식의 시장이 형성될 수 있습니다.
-
-**Q: 포스트백 데이터**
-
-Jeevan: "인스톨 검증 포스트백 내 캠페인의 범위는 어떻게 되나요? 네트워크 별로 100개의 캠페인인가요?"
-
-**A**: 캠페인 ID는 전적으로 광고 제공 업체의 통제하에 있으며 이는 모든 네트워크, 퍼블리셔, 광고주 간의 다양한 조합에 따라 다른 의미를 지닐 수 있습니다. 이러한 분류 하에 100개 값으로 한정됩니다.
-
-더 자세한 사항은 아래 링크를 참조하세요.
-
-[SKAdNetwork 101: SKAdNetwork의 의미와 영향 범위](https://singularkorea.github.io/2020-06-30/what-is-skadnetwork)
-
-**Q: 전환 데이터**
-
-Jeevan: "SKAdNetwork는 인스톨 어트리뷰션뿐만 아니라 전환도 포함하나요?"
-
-**A**: SKAdNetwork는 주로 인스톨 어트리뷰션을 위해 사용하나, 광고주가 인스톨 포스트백 전송을 늦추면서 포스트 인스톨 전환값을 리포트하는 것도 허용합니다. 예를 들어 유저가 앱을 설치한 후 실행한 전환 활동을 인코딩할 수도 있습니다.
-
-더 자세한 사항은 아래 링크를 참조하세요.
-
-[SKAdNetwork 101: SKAdNetwork의 의미와 영향 범위](https://singularkorea.github.io/2020-06-30/what-is-skadnetwork)
-
-**Q: 하이퍼 캐쥬얼 게임 VS IAP 게임**
-
-Wenfeng: "하이퍼 캐쥬얼 게임의 경우 광고 구매를 위한 CPM과 판매를 위한 CPM만 비교하면 되니 유리해지겠네요. 시장에 나오면 주식이라도 구매해야겠어요. 하지만 IAP 게임에는 치명적이지 않을까요? 어떻게 생각하시나요?"
-
-**A**: 하이퍼 캐쥬얼 게임과 IAP 게임 모두 이 새로운 현실에 도전해야 하겠지만 실제 큰 변화는 없을 것 같습니다. 양측 모두 좋은 ROI를 달성하려고 노력할 것이고 점차 시장은 균형을 유지할 겁니다. 특히 하이퍼 캐쥬얼의 성공은 IAP 기반 게임과 깊게 연동되어 있으니까요. IAP 기반 게임이 광고 게재를 멈추면 하이퍼 캐쥬얼 게임에도 심각한 영향을 미치겠죠.
-
-하이퍼 캐쥬얼은 간단한 모델을 갖고 있고, 인앱 구매 게임은 더 긴 LTV 곡선을 보여줍니다. 그러나 지금처럼 정확하지는 않더라도 여전히 광고 최적화 능력과 예측 신호를 제공할 수 있는 결정론적 모델과 확률론적 모델을 혼합하면 양측 모두에 도움이 될 겁니다. 
-
-**Q: 팝업 가능성**
-
-Goncalo: "IDFA를 활성화하도록 유저를 강제하는 팝업을 실행할 수 있을까요?"
-
-**A**: 해당 사안에 대한 Apple의 실제 정책은 현재 명확히 밝혀지지 않았습니다. 저희는 현재 보다 나은 이해를 위해 법적 사항과 정책 사항에 대해서 확인하고 있습니다. 하지만 해당 사항은 a) 그다지 현실적이지 않아 보이며 b) 모든 앱들이 그렇게 강제한다면 iOS 유저 경험을 몹시 해치게 될 겁니다.
-
-예를 들어 Apple의 [앱 심사 가이드라인](https://developer.apple.com/kr/app-store/review/guidelines/)을 보면 "앱은 사용자의 권한 설정을 존중해야 하며, 불필요한 데이터 접근에 대한 동의를 부당한 방법으로 취하거나 조작 또는 강요해서는 안 됩니다."라는 조항이 있습니다. IDFA는 앱 기능에 필수적일까요? 질문의 대상이 누군지에 따라 달라질 겁니다.
-
-**Q: 현존 데이터 유지 가능성**
-
-익명: "유저가 디바이스를 업그레이드하면 기존의 데이터가 쓸모 없어 질까요? IDFA는 디바이스별로 고유하며 AppStore ID가 아니니까요."
-
-**A**: 맞습니다. IDFA는 디바이스 별로 고유하므로 기존에 수집된 IDFA는 시간이 지남에 따라 의미가 없어질 겁니다. 또한 Apple의 정책은 IDFA를 캐싱하여 추후 사용하는 것도 허용하지 않습니다.
-
-**Q: Facebook AEO and VO**
-
-Uriel: "LaL과 AEO와 같이 Facebook의 (커스텀 오디언스 기반이 아닌) 이벤트 기반 최적화 도구 역시 영향을 받을까요?"
-
-**A**: Facebook에는 몇 가지 옵션이 있습니다. 예를 들어 Facebook SDK를 통해 수집한다면 Apple의 정책을 어기는지에 대해서는 아직 명확하지 않습니다.
-
-확실한 것은 현재도 다른 광고 네트워크는 제한된 AEO 스타일의 포스트 인스톨 데이터만을 보유하고 있다는 사실이죠.
-
-**Q: 멀티 터치 어트리뷰션(MTA)**
-
-익명: "ID에 의존하는 MTA와 결정적 측정 방법에 대한 영향은 어떤가요? 향후 옵트인 앱에서 온 일부분의 IDFA를 보게 될까요?"
-
-**A**: IDFA 옵트인 유저로부터 수집된 데이터는 전체 유저군에 일반화되기 어려울 것으로 생각합니다. 전체 대비 너무 작은 부분 집합이 될 테고 나머지 유저와는 실질적으로 다를 테니까요.
-
-SKAdNetwork 내에는 노출이라는 개념이 없고, 멀티 터치 어트리뷰션은 불가능합니다. Singular는 광고 네트워크로부터 노출과 클릭 정보를 수집하므로 추후 MTA 트렌드에 맞는 확률적 데이터를 표시할 가능성도 있습니다.
-
-**Q: 리인스톨과 재다운로드**
-
-익명: "SKAdNetwork를 통해 복귀 vs 신규 유저를 볼 수 있나요?"
-
-**A**: 네, Apple은 SKAdNetwork 포스트백 내에 "재다운로드(redownload)" 플래그를 제공합니다. 이를 통해 앱이 유저에 의해 최초로 인스톨되었는지, 혹은 복귀 유저에 의한 인스톨인지 알 수 있습니다.
-
-**Q: SKAdNetwork 데이터의 프러드 취약 가능성**
-
-Christopher: "데이터가 MMP에 도달하기 전에 광고주를 거친다면, 데이터 조작에 취약하지 않을까요?"
-
-**A**: SKAdNetwork 노티피케이션은 Apple의 공개키에 의해 암호학적으로 서명되므로 대부분의 경우 위조할 수 없습니다. 하지만 광고주는 여전히 광고 네트워크가 위조 노티피케이션을 반환하는지 확인해야 합니다. Singular가 제공하는 것처럼 매우 신중한 검증이 필요합니다. 프러드 방지 목적뿐만 아니라 다른 형식의 검증도 필요할 겁니다. 예를 들어 각 노티피케이션이 고유하고 이전에 사용된 적이 없는지 확인해야 하죠.
-
-**Q: 다른 퍼블리셔는?**
-
-Matt: "다른 퍼블리셔로부터 발생한 인스톨은 어떻게 구분하나요?"
-
-**A**: SKAdNetwork 2.0은 source-app-id (퍼블리셔 ID) 필드를 제공합니다. 이를 통해 광고주는 각기 다른 퍼블리셔를 식별할 수 있죠.
-
-## 더 많은 답변과 인사이트가 기다리고 있습니다.
-
-아직은 Apple의 WWDC가 발표된지 얼마 지나지 않은 초반 단계입니다. 더 많은 것들을 배워나가야 하며 SKAdNetwork에도 변화가 생길 수 있습니다. 이에 발맞춰서 저희가 어떻게 저희 고객사를 지원하고 이 엄청난 변화를 헤쳐나가도록 돕는지 더 많은 정보를 제공할 예정입니다.
-
-블로그 포스트의 업데이트를 확인하시고 Mobile Attribution Privacy (MAP) 연합의 [Slack 그룹](https://join.slack.com/t/mapworkinggroup/shared_invite/zt-9vlvhtzn-bqUVQ1zn3o1UorDNIodvZg)에도 참여하세요.
 
 <hr>
-[Singular 홈페이지에서 원문 보기](https://www.singular.net/blog/ios14-idfa-qa/)
+[Singular 홈페이지에서 원문 보기](https://www.singular.net/blog/skan-skadnetwork-implementation/)
