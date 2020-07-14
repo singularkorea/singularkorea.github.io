@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS 14와 IDFA의 지원 중단: 실제 질문에 대답합니다"
-author: "Yonatan Komornik"
+author: "Eran Friedman"
 ---
 ![cover](https://www.singular.net/wp-content/uploads/2020/07/IDFA-QA.png)
 
