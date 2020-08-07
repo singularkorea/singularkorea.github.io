@@ -13,7 +13,7 @@ Singular는 이미 일년 이상 준비해온 만큼 이 변화에 발빠르게 
 
 주의: 본 의사 결정 트리는 새로운 상황이 생기면 업데이트될 수 있으므로, 가능한 [원문](https://www.singular.net/blog/attribution-in-ios-14/)에서 업데이트된 사항을 확인하시기를 권장합니다.
 
-![map](https://github.com/singularkorea/singularkorea.github.io/blob/master/assets/KR_iOS14Map.jpg)
+![map](https://github.com/singularkorea/singularkorea.github.io/blob/master/assets/KR_iOS14Map.jpg?raw=true)
 
 
 <hr>
