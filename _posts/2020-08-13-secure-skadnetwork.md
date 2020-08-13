@@ -3,7 +3,7 @@ layout: post
 title: "보안 SKAdNetwork 2.0: 신뢰 구축과 매끄러운 설정을 한 번에"
 author: "Gadi Eliashiv"
 ---
-![cover](https://www.singular.net/wp-content/uploads/2021/18/Secure-SKAdNetwork8_-Establish-trustworthy-conversion-reporting-blog-banner-4.png)
+![cover](https://www.singular.net/wp-content/uploads/2020/08/Secure-SKAdNetwork-2.0_-Establish-trustworthy-conversion-reporting-blog-banner-4.png)
 
 최초로 마켓에 SKAdNetwork을 위한 솔루션을 도입하겠다고 공표한 6월 23일, 이미 우리는 SKAdNetwork에 다음 두 가지 치명적인 문제점이 존재함을 파악했습니다.
 
