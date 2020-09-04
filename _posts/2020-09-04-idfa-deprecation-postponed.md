@@ -47,9 +47,9 @@ Apple의 원래 계획에 따르면 이전 데이터와 iOS 14 데이터를 함�
 
 따라서 평상시의 비즈니스 발표와 다른 이번 발표 내용에 조금 주의를 기울여야 할 필요가 있습니다. 이는 아직 "고" 사인이 나지 않은 준비 사항으로 곧 "고" 사인이 다가옵니다.
 
-어떻게 iOS 14, SKAdNetwork를 준비하고 변경 사항에 따르는 애로 사항을 줄이고자 한다면 [자세한 사항을 링크에서 알아보세요](https://www.singular.net/skadnetwork/). 또한 [여러분의 의견도 듣고자 합니다](https://www.singular.net/lp/demo/). 또한 이러한 변경 사항을 함께 논의하는 저희 모바일 어트리뷰션 프라이버시 그룹 Slack([Mobile Attribution Privacy group on Slack](https://join.slack.com/t/mapworkinggroup/shared_invite/zt-9vlvhtzn-bqUVQ1zn3o1UorDNIodvZg))에도 참가해보세요.
+어떻게 iOS 14, SKAdNetwork를 준비하고 변경 사항에 따르는 애로 사항을 줄이는지 궁금하시다면 [자세한 사항을 링크에서 알아보세요](https://www.singular.net/skadnetwork/). 또한 [여러분의 의견도 듣고자 합니다](https://www.singular.net/lp/demo/). 또한 이러한 변경 사항을 함께 논의하는 저희 모바일 어트리뷰션 프라이버시 그룹 Slack([Mobile Attribution Privacy group on Slack](https://join.slack.com/t/mapworkinggroup/shared_invite/zt-9vlvhtzn-bqUVQ1zn3o1UorDNIodvZg))에도 참가해보세요.
 
-저를 개인적으로 해당 Slack 채널해서 찾으실 수 있습니다!
+저를 개인적으로 해당 Slack 채널에서 찾으실 수 있습니다!
 
 <hr>
 [Singular 홈페이지에서 원문 보기](https://www.singular.net/blog/idfa-deprecation-postponed/)
