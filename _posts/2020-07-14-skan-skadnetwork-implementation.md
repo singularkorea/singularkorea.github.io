@@ -3,7 +3,7 @@ layout: post
 title: "SKAN: SKAdNetwork 연동의 표준"
 author: "Eran Friedman"
 ---
-![cover](https://www.singular.net/wp-content/uploads/2020/07/SKAN_SKAdNetwork_Implementation_Singular_Blog_Hero.png)
+![cover](https://www.singular.net/wp-content/uploads/2020/07/SKAN_SKAdNetwork_Singular_Blog_Hero.png)
 
 Singular가 [SKAdNetwork 지원](https://singularkorea.github.io/2020-06-28/skadnetwork-support)을 발표하고 [오픈 소스 코드](https://singularkorea.github.io/2020-07-06/skadnetwork-code)를 배포한 이후 업계의 많은 관심이 집중됐습니다. 또한 저희는 여러 광고주, 퍼블리셔, 매체 및 MMP와 함께 SKAdNetowork의 포텐셜에 대해 다각도로 논의해 왔습니다.
 
