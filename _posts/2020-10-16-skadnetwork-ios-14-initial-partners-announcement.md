@@ -30,7 +30,7 @@ Singular의 SKAN을 활용하면 두 가지 모두 달성할 수 있습니다.
 * 전환값(conversion valud)의 의미를 마케터로부터 애드 네트워크로 전달하여 캠페인 최적화가 가능하게 합니다.
 * 이외에도 여러 많은 기능이 포함됩니다.
 
-궁극적으로 Singular SKAN이 달성하고자 하는 것은 [IDFA](https://www.singular.net/blog/mobile-tutorial-series-idfa-apple-identifier-advertisers/)가 옵트인으로 변경되는 동시에  획득 확률도 줄어들면서 마케터가 익명의 모바일 앱 인스톨로도 매끄럽게 어트리뷰션을 진행할 수 있게 하는 동시에 추후 마케팅 비용을 최적화하는 중요한 역활을 하는 것입니다.
+궁극적으로 Singular SKAN이 달성하고자 하는 것은 [IDFA](https://www.singular.net/blog/mobile-tutorial-series-idfa-apple-identifier-advertisers/)가 옵트인으로 변경되는 동시에 획득 확률도 줄어들게 되는 시점에도 마케터가 익명의 모바일 앱 인스톨로도 매끄럽게 어트리뷰션을 진행할 수 있게 하고 추후 마케팅 비용을 최적화할 수 있도록 돕는 중요한 역할을 하는 것입니다.
 
 ## 보안 SKAN은 프러드에서 안전한 SKAdNetwork 어트리뷰션을 의미합니다.
 
@@ -90,6 +90,7 @@ Singular는 Apple의 SKAdNetwork 구현을 최초로 지원한 MMP로서 프라�
 * Adikteev
 * AppLovin
 * CrossInstall
+* Facebook
 * Fyber
 * ironSource
 * Jampp
@@ -97,6 +98,7 @@ Singular는 Apple의 SKAdNetwork 구현을 최초로 지원한 MMP로서 프라�
 * Liftoff
 * MOLOCO
 * Remerge
+* Smadex
 * Snapchat
 * Tapjoy
 * TikTok
