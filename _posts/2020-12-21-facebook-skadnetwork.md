@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SKAdNetwork, Facebook과 Singular: Facebook을 통한 iOS 어트리뷰션 지원 방법"
+title: "SKAdNetwork와 Facebook과 Singular: Facebook을 통한 iOS 어트리뷰션 지원 방법"
 author: "Susan Kuo"
 ---
 ![cover](https://www.singular.net/wp-content/uploads/2020/12/Singular-and-facebook-for-SKAdNetwork.png)
