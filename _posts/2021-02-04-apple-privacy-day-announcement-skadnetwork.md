@@ -5,7 +5,7 @@ author: "Gadi Eliashiv"
 ---
 ![cover](https://www.singular.net/wp-content/uploads/2021/01/Apple-on-SKAdNetwork_-View-through-attribution-fingerprinting-and-app-to-web-measurement-3.png)
 
-데이터 프라이버시에 큰 획이 그어졌습니다. Apple이 프라이버시, 정보 투명성, 그리 iOS 14가 어떻게 데이터를 수집하고 공유할 수 있는 앱과 서비스를 제어할 수 있는지에 대한 새로운 정보를 대량으로 제공했기 때문이죠. 이제 바로 다음 iOS 14 베타(14.5) 버전부터는 앱 트래킹 투명성(App Tracking Transparency) 팝업이 요구되고, 다음 전체 iOS 버전에서는 공개적으로 풀릴 예정입니다. 아마 3월이 될 가능성이 큽니다.
+데이터 프라이버시에 큰 획이 그어졌습니다. Apple이 프라이버시, 정보 투명성, 그리고 iOS 14가 데이터를 수집하고 공유할 수 있는 앱과 서비스를 어떻게 제어할 지에 대한 새로운 정보를 대량으로 제공했기 때문이죠. 이제 바로 다음 iOS 14 베타(14.5) 버전부터는 앱 트래킹 투명성(App Tracking Transparency) 팝업이 요구되고, 다음 전체 iOS 버전에서는 공개 버전에도 적용될 예정입니다. 아마 3월이 될 가능성이 커 보입니다.
 
 또한, 큰 변화를 가져올 이 발표로 업계에서 논의되던 주요 쟁점 사항 역시 해결되었습니다.
 
@@ -15,7 +15,7 @@ iOS 14.5부터 Singular는 같은 회사 소유의 앱이나 사이트 사용자
 
 우리 모두에게 어려운 상황이 될 겁니다.
 
-사실 Singular는 [지난 여름에 이 상황을 이미 인지](https://singularkorea.github.io/2020-06-29/idfa-faq)했고, iOS App Store에서 [앱이 금지되는 10가지 방법](https://www.singular.net/blog/banned-from-app-store/)이라는 블로그 포스팅을 포함해서 [거듭](https://singularkorea.github.io/2020-07-09/ios14-idfa-qa), [거듭](https://www.singular.net/blog/mobile-app-attribution/), [거듭](https://www.singular.net/blog/ios14-mmp/) 알려왔습니다. 핑거프린트가 계속 사용 가능하기를 기도하거나 개인 정보 보호 측면에서의 근본적인 결함이 있는 부분에 계속 투자하는 대신, 우리는 핑거프린팅이 곧 사장될 것으로 예측하고 최선의 투자는 SKAdNetwork에 우리의 모든 에너지를 쏟아 혁신을 이루는 것이라고 결정했습니다.
+사실 Singular는 [지난 여름에 이 상황을 이미 인지](https://singularkorea.github.io/2020-06-29/idfa-faq)했고, iOS App Store에서 [앱이 금지되는 10가지 방법](https://www.singular.net/blog/banned-from-app-store/)이라는 블로그 포스팅을 포함해서 [거듭](https://singularkorea.github.io/2020-07-09/ios14-idfa-qa), [거듭](https://www.singular.net/blog/mobile-app-attribution/), [거듭](https://www.singular.net/blog/ios14-mmp/) 알려왔습니다. 추후에도 핑거프린트를 계속해서 사용할 수 있기를 기도하거나 개인 정보 보호 측면에서의 근본적인 결함이 있는 부분에 투자를 지속하는 대신, 우리는 핑거프린팅이 곧 사장될 것으로 예측하고 최선의 투자는 SKAdNetwork에 우리의 모든 에너지를 쏟아 혁신을 이루는 것이라고 결정했습니다.
 
 그 결과로 우리는 고객사에 업계에서 가장 진보된 SKAdNetwork 솔루션을 제공할 수 있게 되었습니다. [SKAdNetwork](https://www.singular.net/blog/what-is-skadnetwork/)를 계속 진화하고자 하는 Apple의 의도를 통해, 우리는 마케터가 iOS 14 이후에도 효과적인 사용자 확보 및 성장을 계속해서 이뤄나갈 수 있다고 진심으로 믿고 있습니다.
 
